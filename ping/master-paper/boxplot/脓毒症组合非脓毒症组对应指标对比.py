@@ -17,10 +17,10 @@ plt.figure(figsize=(16, 8))
 ax1 = plt.subplot(2, 4, 1)
 df1 = df[["脓毒症组单核细胞PD-L1", "脓毒症组单核细胞PD-L1百分比（%）对照组"]]
 df1 = df1.dropna()
-ax1.boxplot(df1, notch=False, sym='o', vert=True)
+ax1.boxplot([df1["脓毒症组单核细胞PD-L1"], df1["脓毒症组单核细胞PD-L1百分比（%）对照组"]], notch=False, sym='o', vert=True)
 plt.xticks([x+1 for x in range(2)], ['脓毒症组', '非脓毒症组'], fontsize=20)
 plt.yticks(fontsize=20)
-plt.ylabel("脓毒症组单核细胞PD-L1百分比（%）", fontsize=16)
+plt.ylabel("单核细胞PD-L1百分比（%）", fontsize=16)
 # 绘制比较线
 x1, x2 = 1, 2
 y, h, col = 60, 3, 'k'
@@ -34,10 +34,10 @@ set_ax(ax1)
 ax2 = plt.subplot(2, 4, 2)
 df2 = df[["脓毒症组血乳酸mmol/L", "脓毒症组血乳酸mmol/L对照组"]]
 df2 = df2.dropna()
-ax2.boxplot(df2, notch=False, sym='o', vert=True)
+ax2.boxplot([df2["脓毒症组血乳酸mmol/L"], df2["脓毒症组血乳酸mmol/L对照组"]], notch=False, sym='o', vert=True)
 plt.xticks([x+1 for x in range(2)], ['脓毒症组', '非脓毒症组'], fontsize=20)
 plt.yticks(fontsize=20)
-plt.ylabel("血乳酸", fontsize=20)
+plt.ylabel("血乳酸(mmol/L)", fontsize=20)
 x1, x2 = 1, 2
 y, h, col = 7.5, 0.5, 'k'
 ax2.set_ylim(0, 10)
@@ -50,7 +50,7 @@ set_ax(ax2)
 ax3 = plt.subplot(2, 4, 3)
 df3 = df[["脓毒症组PCT", "脓毒症组PCT对照组"]]
 df3 = df3.dropna()
-ax3.boxplot(df3, notch=False, sym='o', vert=True)
+ax3.boxplot([df3["脓毒症组PCT"], df3["脓毒症组PCT对照组"]], notch=False, sym='o', vert=True)
 plt.xticks([x+1 for x in range(2)], ['脓毒症组', '非脓毒症组'], fontsize=20)
 plt.yticks(fontsize=20)
 plt.ylabel("PCT", fontsize=20)
@@ -67,7 +67,7 @@ ax4 = plt.subplot(2, 4, 4)
 
 df4 = df[["脓毒症组IL-6", "脓毒症组IL-6对照组"]]
 df4 = df4.dropna()
-ax4.boxplot(df4, notch=False, sym='o', vert=True)
+ax4.boxplot([df4["脓毒症组IL-6"], df4["脓毒症组IL-6对照组"]], notch=False, sym='o', vert=True)
 plt.xticks([x+1 for x in range(2)], ['脓毒症组', '非脓毒症组'], fontsize=20)
 plt.yticks(fontsize=20)
 plt.ylabel("IL-6", fontsize=20)
@@ -82,7 +82,7 @@ set_ax(ax4)
 ax5 = plt.subplot(2, 4, 5)
 df1 = df[["脓毒症组IL10", "脓毒症组IL10对照组"]]
 df1 = df1.dropna()
-ax5.boxplot(df1, notch=False, sym='o', vert=True)
+ax5.boxplot([df1["脓毒症组IL10"], df1["脓毒症组IL10对照组"]], notch=False, sym='o', vert=True)
 plt.xticks([x+1 for x in range(2)], ['脓毒症组', '非脓毒症组'], fontsize=20)
 plt.yticks(fontsize=20)
 plt.ylabel("IL10", fontsize=20)
@@ -99,10 +99,10 @@ set_ax(ax5)
 ax6 = plt.subplot(2, 4, 6)
 df2 = df[["脓毒症组IL1β", "脓毒症组IL1β对照组"]]
 df1 = df2.dropna()
-ax6.boxplot(df2, notch=False, sym='o', vert=True)
+ax6.boxplot([df2["脓毒症组IL1β"], df2["脓毒症组IL1β对照组"]], notch=False, sym='o', vert=True)
 plt.xticks([x+1 for x in range(2)], ['脓毒症组', '非脓毒症组'], fontsize=20)
 plt.yticks(fontsize=20)
-plt.ylabel("IL1β", fontsize=20)
+plt.ylabel("IL-1β", fontsize=20)
 x1, x2 = 1, 2
 y, h, col = 85, 3, 'k'
 ax6.set_ylim(0, 100)
@@ -115,7 +115,7 @@ set_ax(ax6)
 ax7 = plt.subplot(2, 4, 7)
 df3 = df[["脓毒症组TNF-α", "脓毒症组TNF-α对照组"]]
 df3 = df3.dropna()
-ax7.boxplot(df3, notch=False, sym='o', vert=True)
+ax7.boxplot([df3["脓毒症组TNF-α"], df3["脓毒症组TNF-α对照组"]], notch=False, sym='o', vert=True)
 plt.xticks([x+1 for x in range(2)], ['脓毒症组', '非脓毒症组'], fontsize=20)
 plt.yticks(fontsize=20)
 plt.ylabel("TNF-α", fontsize=20)

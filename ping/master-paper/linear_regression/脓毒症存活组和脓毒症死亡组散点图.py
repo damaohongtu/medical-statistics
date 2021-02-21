@@ -71,7 +71,7 @@ y = df3["脓毒症死亡组血乳酸"].values.reshape(-1, 1)
 plt.xticks(fontsize=20)
 plt.yticks(fontsize=20)
 plt.xlabel("单核细胞PD-L1百分比（%）", fontsize=20)
-plt.ylabel("血乳酸", fontsize=20)
+plt.ylabel("血乳酸(mmol/L)", fontsize=20)
 
 model = linear_model.LinearRegression()
 model.fit(X, y)

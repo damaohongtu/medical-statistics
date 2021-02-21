@@ -18,7 +18,7 @@ def set_ax(ax):
 ax1 = plt.subplot(2, 2, 1)
 df1 = df[["脓毒症存活组单核细胞PD-L1百分比（%）", "脓毒症组血乳酸mmol/L"]]
 df1 = df1.dropna()
-ax1.boxplot(df1, notch=False, sym='o', vert=True)
+ax1.boxplot([df1["脓毒症存活组单核细胞PD-L1百分比（%）"], df1["脓毒症组血乳酸mmol/L"]], notch=False, sym='o', vert=True)
 plt.xticks([x+1 for x in range(2)], ['单核细胞PD-L1百分比(%)', '血乳酸mmol/L'])
 plt.yticks(fontsize=20)
 # 绘制比较线
@@ -34,7 +34,7 @@ set_ax(ax1)
 ax2 = plt.subplot(2, 2, 2)
 df2 = df[["脓毒症死亡组单核细胞PD-L1百分比（%）", "脓毒症死亡组血乳酸"]]
 df2 = df2.dropna()
-ax2.boxplot(df2, notch=False, sym='o', vert=True)
+ax2.boxplot([df2["脓毒症死亡组单核细胞PD-L1百分比（%）"], df2["脓毒症死亡组血乳酸"]], notch=False, sym='o', vert=True)
 plt.xticks([x+1 for x in range(2)], ['单核细胞PD-L1百分比(%)', '血乳酸mmol/L'])
 plt.yticks(fontsize=20)
 x1, x2 = 1, 2
@@ -49,7 +49,7 @@ set_ax(ax2)
 ax3 = plt.subplot(2, 2, 3)
 df3 = df[["脓毒症存活组单核细胞PD-L1百分比（%）", "脓毒症组PCT"]]
 df3 = df3.dropna()
-ax3.boxplot(df3, notch=False, sym='o', vert=True)
+ax3.boxplot([df3["脓毒症存活组单核细胞PD-L1百分比（%）"], df3["脓毒症组PCT"]], notch=False, sym='o', vert=True)
 plt.xticks([x+1 for x in range(2)], ['单核细胞PD-L1百分比（%）', 'PCT'])
 plt.yticks(fontsize=20)
 x1, x2 = 1, 2
@@ -65,7 +65,7 @@ ax4 = plt.subplot(2, 2, 4)
 
 df4 = df[["脓毒症死亡组单核细胞PD-L1百分比（%）", "脓毒症存活组PCT"]]
 df4 = df4.dropna()
-ax4.boxplot(df4, notch=False, sym='o', vert=True)
+ax4.boxplot([df4["脓毒症死亡组单核细胞PD-L1百分比（%）"], df4["脓毒症存活组PCT"]], notch=False, sym='o', vert=True)
 plt.xticks([x+1 for x in range(2)], ['单核细胞PD-L1百分比（%）', 'PCT'])
 plt.yticks(fontsize=20)
 x1, x2 = 1, 2
