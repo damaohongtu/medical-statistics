@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="E:\Anaconda\envs\ping\Lib\site-packages\matplotlib\pyplot.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\master-paper\2021-03-21-2.csv">
           <value>
             <Attribute>
@@ -66,6 +73,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\master-paper\box-compare\demo.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\master-paper\boxplot-scatter-spearman.csv">
           <value>
             <Attribute>
@@ -74,6 +88,13 @@
           </value>
         </entry>
         <entry key="\master-paper\data-final.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\master-paper\linear_regression\pic-3.5.py">
           <value>
             <Attribute>
               <option name="separator" value="," />
