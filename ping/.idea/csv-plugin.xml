@@ -3,27 +3,6 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="C:\Users\tianm\Desktop\2021-03-21-2.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="C:\Users\tianm\Desktop\平平论文\平平毕业论文\20210326-final.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="E:\Anaconda\envs\ping\Lib\site-packages\matplotlib\pyplot.py">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\master-paper\2021-03-21-2.csv">
           <value>
             <Attribute>
@@ -52,34 +31,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\master-paper\20210326-box\1-merge.py">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\master-paper\20210326-box\1.py">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\master-paper\20210326-box\4.py">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\master-paper\box-compare\demo.py">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\master-paper\boxplot-scatter-spearman.csv">
           <value>
             <Attribute>
@@ -88,13 +39,6 @@
           </value>
         </entry>
         <entry key="\master-paper\data-final.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\master-paper\linear_regression\pic-3.5.py">
           <value>
             <Attribute>
               <option name="separator" value="," />

@@ -7,10 +7,10 @@ df = pd.read_csv("../data-final.csv")
 print(df.columns)
 
 def set_ax(ax):
-    ax.spines['bottom'].set_linewidth(2);  ###设置底部坐标轴的粗细
-    ax.spines['left'].set_linewidth(2);  ####设置左边坐标轴的粗细
-    ax.spines['right'].set_linewidth(2);  ###设置右边坐标轴的粗细
-    ax.spines['top'].set_linewidth(2);  ###设置右边坐标轴的粗细
+    ax.spines['bottom'].set_linewidth(2)  ###设置底部坐标轴的粗细
+    ax.spines['left'].set_linewidth(2)  ####设置左边坐标轴的粗细
+    ax.spines['right'].set_linewidth(2)  ###设置右边坐标轴的粗细
+    ax.spines['top'].set_linewidth(2)  ###设置右边坐标轴的粗细
 
 
 # ---------百分比vs乳酸(实验组)----------------

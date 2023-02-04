@@ -33,22 +33,16 @@ x = x - (total_width - width) / 2
 
 plt.figure(figsize=(8, 6.5))
 plt.grid(True, ls='--')
-plt.ylim(0, 16)
-b1 = plt.boxplot(mymodel, widths=0.1, positions=x, notch=False, sym='o', vert=True)
-l1 = plt.plot(x, mymodel_mean, '-')
-b2 = plt.boxplot(baseline, widths=0.1, positions=x+width, notch=False, sym='o', vert=True, patch_artist=True)
-l2 = plt.plot(x+width, baseline_mean, '-')
+plt.ylim(0, 4)
+# b1 = plt.boxplot(mymodel, widths=0.1, positions=x, notch=False, sym='o', vert=True)
+b1 = plt.plot(x, mymodel_mean, '-')
+# b2 = plt.boxplot(baseline, widths=0.1, positions=x+width, notch=False, sym='o', vert=True, patch_artist=True)
+b2 = plt.plot(x, baseline_mean, '-')
 
 plt.xticks(x+width/2,["Precision", "Recall"])
 # for b in b1+b2:
 #     h=b.get_height()
 #     plt.text(b.get_x()+b.get_width()/2,h,'%0.3f'%float(h),ha='center',va='bottom')
-
-for box in b2['boxes']:
-    # box.set(color='grey')
-    box.set_hatch('//')
-    box.set_facecolor('grey')
-    print(box)
 
 plt.legend()
 plt.savefig("./test.png", format='png',bbox_inches='tight')

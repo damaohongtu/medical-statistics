@@ -26,7 +26,7 @@ x1, x2 = 1, 2
 y, h, col = 900, 20, 'k'
 ax1.set_ylim(0, 1000)
 ax1.plot([x1, x1, x2, x2], [y, y+h, y+h, y], lw=1.5, c=col)
-ax1.text((x1+x2)*.5, y+h+1, "$P=.355$", ha='center', va='bottom', color=col, fontsize=20)
+ax1.text((x1+x2)*.5, y+h+1, "$P=.350$", ha='center', va='bottom', color=col, fontsize=20)
 # ax1.set_title("(a)", y=-0.2, fontsize=20)
 set_ax(ax1)
 plt.show()
